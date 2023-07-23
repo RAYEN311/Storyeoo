@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storyeoo</title>
+</head>
+<body id="cen">
+    <iframe id="fram" src="./about-rayen-aziz.html" frameborder="0" style="display: none;"></iframe>
+    <div id="1" class="circle">
+    </div> 
+    <svg onclick="show_rayen_aziz()" fill="currentcolor"  class="info-circle-fill" viewBox="0 0 16 16"> <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/> </svg>
+    <div id="2" class="background">
+        <section class="logo" style="cursor: pointer;" onclick="window.location = 'intent-page-log.html'">
+            <div class="rayen">
+                <label class="shape" ></label>
+            <label class="shape second" ></label>
+        </div>
+        <h1 >
+            Storyeoo
+        </h1>
+    </div>
+    <video id="3" autoplay muted video loop type="video/mp4" style="height:50vh;width: 100vw;margin-top: 20vh;">
+         <source src="./Rayen_assets/vedios/is.mp4" type="video/mp4">
+    </video>
+    <button id="4" style="cursor: pointer; background-color: #0025f5;height: 4rem;width: 10rem; position: absolute;bottom: 10vh;right: 10vw;color: #ffffff; border-radius: 15px;"onclick="window.location = 'intent-page-log.html'">
+        Get started
+    </button>
+</body>
+<FOoter>
+</FOoter>
+<style >
+    .info-circle-fill{
+        z-index: 2;
+        height: 5vh;
+        width: 5vh;
+        position: absolute;
+        right: 3vw;
+        top: 7vh;
+        cursor: pointer;
+    }
+    .circle{
+         height: 150vw;
+         width: 150vw;
+         border-radius: 50%;
+         background-color: #071770;
+         position: absolute;
+         top:-95vw;
+         left:-55vw
+    }
+
+    *,
+    *:before,
+    *:after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+body{
+background-color: #ffffff;padding: 8px;overflow:-moz-hidden-unscrollable;overflow: hidden ;display: block;
+}
+
+label{
+display: block;
+font-size: 2vh;
+font-weight: 500;
+margin-top: 2vh;
+margin-bottom: 1vh;
+}
+.background{
+width: 100%;
+height:100%;
+}
+.background .shape{
+height: 20vw;
+width: 20vw;
+border-radius: 50%;
+position: absolute;
+}
+.logo{
+position: absolute;
+left: 3vw;
+top: 25px;
+display:grid;
+grid-template-columns: 30vw 30vw;
+width: 100vw;
+height: 20vw;
+}
+.shape:first-child{
+background: linear-gradient(
+    to left,
+    #9418ad,
+    #f62323,
+    #f62323,
+    #d6d300
+    );
+}
+.shape.second{
+    background: linear-gradient(
+        to left,
+    #8f19f0,
+    #071770
+);
+left: 8vw;
+}
+h1{
+color: rgb(255, 255, 255);
+font-size: 10vw;
+margin: auto;
+letter-spacing: 0.5px;
+
+}
+
+
+</style>
+<SCript>
+    var db  = 0;
+    let show_rayen_aziz=()=>{
+        if(db == 0){
+        document.getElementById('1').style.cssText = "display:none;"
+        document.getElementById('2').style.cssText = "display:none;"
+        document.getElementById('3').style.cssText = "display:none;"
+        document.getElementById('4').style.cssText = "display:none;"
+        document.getElementById('cen').style.cssText = "display:flex;align-items:center;justify-content:center;background-color:grey;"
+        document.getElementById('fram').style.cssText = "display:block;height:100vh;width:40rem;"
+        db = 1;
+        return db
+        }
+        else if(db == 1){
+        document.getElementById('1').style.cssText = "display:block;"
+        document.getElementById('2').style.cssText = "display:block;"
+        document.getElementById('3').style.cssText = "display:block;height:50vh;width: 100vw;margin-top: 20vh;"
+        document.getElementById('4').style.cssText = "display:block;cursor: pointer; background-color: #0025f5;height: 4rem;width: 10rem; position: absolute;bottom: 10vh;right: 10vw;color: #ffffff; border-radius: 15px;"
+        document.getElementById('cen').style.cssText = "background-color: #ffffff;padding: 8px;overflow:-moz-hidden-unscrollable;overflow: hidden ;display: block;"
+        document.getElementById('fram').style.cssText = "display:none;"
+        db = 0;
+        return db
+        }
+    }
+</SCript>
+</html>

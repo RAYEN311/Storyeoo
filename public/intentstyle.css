@@ -1,0 +1,79 @@
+.anim{
+    animation: rot 0.5s linear infinite;
+    height: 6vh;
+    width: 6vh;
+    background-color: white;
+    border-radius: 4vh; 
+    border: solid blue 7px;
+    border-top: solid rgb(255, 255, 255) 7px;
+    margin-left: 9.5vh;
+    margin-top: 1vh;
+}
+body{
+    overflow: hidden;
+}
+@keyframes rot {
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+    }
+.background{
+    width: 100%;
+    height:100%;
+}
+.background .shape{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    position: absolute;
+}
+.logo{
+position: absolute;
+left: 50vw;
+top: 50vh;
+display:grid;
+grid-template-columns: 8vh 16vh;
+transform: translate(-50%,-50%);
+}
+.shape:first-child{
+    background: linear-gradient(
+        to left,
+        #9418ad,
+        #f62323,
+        #f62323,
+        #d6d300
+        );
+        margin-top: 2vh;
+}
+.shape.second{
+        background: linear-gradient(
+            to left,
+        #8f19f0,
+        #071770
+    );
+    left: 2vh;
+    margin-top: 2vh;
+}
+.logo-type{
+    color: rgb(0, 0, 0);
+    font-size: 4vh;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    font-weight: 550;
+}
+.rayen{
+    width: 7vh;
+    height: 10vh;
+    position: relative;
+}
+*{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}

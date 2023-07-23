@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Messaging</title>
+<!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+  <div class="background">
+    <section class="logo">
+        <div class="rayen">
+            <label class="shape" ></label>
+        <label class="shape second" ></label>
+    </div>
+    <div class="logo-type">
+        Storyeoo
+    </div>
+   </section>
+ 
+  </div>
+
+    <section class="profiles">
+      <section class="mon_proflie" onclick="plus()">
+        <input type="file" id="imgupload" style="display:none" accept=".jpg , .png , .jpeg" >
+        <img id="im" src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my">
+        <link rel="stylesheet" href="Rayen_assets/chatbox-style.css"></style>
+        <!-- <script>
+
+        </script> -->
+        <section class="pourcentage" >
+          <span>100%</span>
+          <div class="progress">
+            <div id="indic"></div>
+          </div>
+        </section>
+        <section>
+          <div id="myn" class="name">
+          </div>
+          <hr>
+          <div style="margin-left: 10px; margin-right: 20px;" id="tel">
+          </div>
+        </section>
+      </section>
+      <button class="upload_botton" id="bot-up" >Upload The Image</button>
+
+    <section style="position: absolute; right: 20px;top: 10%;">
+      <div title="Connected" style="height: 20px;width: 20px;cursor:progress; border-radius: 50%; background-color: rgb(0, 211, 0);margin: auto; margin-top: 7px; margin-bottom: 10px;"></div>
+      <h5 id="led" style="margin: 0;">Connected</h5>
+    </section>
+    <div id="friend_container" style="display: flex; justify-content: center;align-items: center; width: 87%;overflow-x:scroll; margin-left: 15px;padding: 1px;">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im1">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im2">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im3">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im4">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im5">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im6">
+    <img  src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my" id="im7"> 
+
+    </div>
+
+ </section>
+    <script>
+      var t = false
+      let plus=()=>{
+      if(!t){
+      console.log("change")
+      let upload = document.getElementById('imgupload');
+      upload.click();
+      document.getElementById('im').outerHTML= '<img id="im" src="./Rayen_assets/imgs/29948.png" alt="user_img" class="my">' 
+      t = true;
+      console.log(t)
+    }
+      else{
+        console.log("nochange")
+      document.getElementById('im').outerHTML= '<img id="im" onclick="plus()" src="./Rayen_assets/imgs/149071.png" alt="user_img" class="my">'
+      t = false ;
+      }
+      }
+    </script>
+    <div class="center">
+      <section class="search1" id="search"> <input type="num" id="search_num" placeholder="Add by number"> <div class="add1" >+</div><div class="add" id="add">+</div></section>
+  <div class="chat">
+    <div class="contact bar">
+      <img id="rayen" class="pic"></img>
+      <div id="name_friend" class="name"></div>
+      <div class="seen"></div>
+    </div>
+    <div class="messages" id="chat">
+      <div class="time">
+      </div>
+    <div class="message me" style="display: none;" id="chang">
+
+      <div class="typing typing-1"></div>
+            <div class="typing typing-2"></div>
+            <div class="typing typing-3"></div>
+    </div>
+      <div class="message aziz" style="display: none;">
+        <div class="typing typing-1"></div>
+        <div class="typing typing-2"></div>
+        <div class="typing typing-3"></div>
+      </div>
+    </div>
+    <div class="input">
+      <input id="chatput"  placeholder="Type here!" type="text" /><div class="send" id="send" style="cursor:pointer; height: 5vh; width: 5vh;background-color: #0f0a2b;display: flex;align-items: center;justify-content:center; border-radius: 1vh;"><svg xmlns="http://www.w3.org/2000/svg" style="height:3vh; width:3vh;" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"> <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/> </svg></div>
+    </div>
+    <script>
+      // oninput="changemes()"
+      // function changemes(){
+      //   let chang = document.getElementById('chang');
+      //   chang.style.cssText = "display: block";
+      //   setTimeout(()=>{document.getElementById('chang').style.cssText = "display: none;"},500)
+      // }
+      </script>
+  </div>
+</div>
+</div>
+<svg id="sv"  style="position: absolute; top:5vh;right:3vh;height:3vh ; width:3vh; ;border-radius:5px;cursor:pointer;" viewBox="0 0 24 24"  > <g> <path fill="white" d="M0 0h24v24H0z" id="mainIconPathAttribute"></path> <path d="M4 18h2v2h12V4H6v2H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3zm2-7h7v2H6v3l-5-4 5-4v3z" id="mainIconPathAttribute"></path> </g> </svg>
+<!-- </script><script  src="./script.js"></script> -->
+<SCript>
+var chat = document.getElementById('chat');
+chat.scrollTop = chat.scrollHeight - chat.clientHeight;
+</SCript>
+<script src="chatbox_module.js" type="module"> </script>
+<!-- upload img script section # rayen  -->
+<script src="rayen_upload_img_GET.js" type="module"></script>
+    <!-- upload img pour cloud firebase  -->
+<script src="push-friend-id-to-cookie.js" type="module"> </script>
+<script src="get-freind-image-module.js" type="module"> </script>
+</body>
+</html>
